@@ -1,6 +1,6 @@
 ﻿namespace HM7_5
 {
-    partial class Menu
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,49 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.tBoxGuess = new System.Windows.Forms.Label();
+            this.tboxAnswer = new System.Windows.Forms.TextBox();
+            this.btnEnter = new System.Windows.Forms.Button();
+            this.btnGen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // tBoxGuess
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 10F);
-            this.label1.Location = new System.Drawing.Point(38, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Get this number in the minimum number of moves";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.tBoxGuess.AutoSize = true;
+            this.tBoxGuess.Font = new System.Drawing.Font("Comic Sans MS", 10F);
+            this.tBoxGuess.Location = new System.Drawing.Point(69, 61);
+            this.tBoxGuess.Name = "tBoxGuess";
+            this.tBoxGuess.Size = new System.Drawing.Size(397, 24);
+            this.tBoxGuess.TabIndex = 0;
+            this.tBoxGuess.Text = "Guess a number in the minimum number of moves";
             // 
-            // label2
+            // tboxAnswer
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(184, 100);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.tboxAnswer.Enabled = false;
+            this.tboxAnswer.Location = new System.Drawing.Point(181, 132);
+            this.tboxAnswer.Name = "tboxAnswer";
+            this.tboxAnswer.Size = new System.Drawing.Size(100, 27);
+            this.tboxAnswer.TabIndex = 2;
+            this.tboxAnswer.TextChanged += new System.EventHandler(this.tboxAnswer_TextChanged);
             // 
-            // Menu
+            // btnEnter
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.btnEnter.Enabled = false;
+            this.btnEnter.Location = new System.Drawing.Point(194, 165);
+            this.btnEnter.Name = "btnEnter";
+            this.btnEnter.Size = new System.Drawing.Size(75, 23);
+            this.btnEnter.TabIndex = 3;
+            this.btnEnter.Text = "Enter";
+            this.btnEnter.UseVisualStyleBackColor = true;
+            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
+            // 
+            // btnGen
+            // 
+            this.btnGen.Location = new System.Drawing.Point(161, 12);
+            this.btnGen.Name = "btnGen";
+            this.btnGen.Size = new System.Drawing.Size(142, 23);
+            this.btnGen.TabIndex = 4;
+            this.btnGen.Text = "Generate Number";
+            this.btnGen.UseVisualStyleBackColor = true;
+            this.btnGen.Click += new System.EventHandler(this.btnGen_Click);
+            // 
+            // Form2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(402, 229);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(490, 259);
+            this.Controls.Add(this.btnGen);
+            this.Controls.Add(this.btnEnter);
+            this.Controls.Add(this.tboxAnswer);
+            this.Controls.Add(this.tBoxGuess);
             this.Font = new System.Drawing.Font("Comic Sans MS", 8.24F);
-            this.Name = "Menu";
+            this.Name = "Form2";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label tBoxGuess;
+        private System.Windows.Forms.TextBox tboxAnswer;
+        private System.Windows.Forms.Button btnEnter;
+        private System.Windows.Forms.Button btnGen;
     }
 }

@@ -64,7 +64,7 @@ namespace HM7_5
         }
 
         public Stack remove = new Stack();
-        
+
 
         private void btnDisable()
         {
@@ -97,24 +97,9 @@ namespace HM7_5
             remove.Clear();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCount_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void Doubler_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
-           
+
             var rand = new Random();
             userNumber = rand.Next(1, 100);
 
@@ -128,7 +113,7 @@ namespace HM7_5
             btnBack.Enabled = true;
 
             userCount = GetStep(userNumber);
-            lblGetNum.Text = "Get number - " + userNumber + " with minimum moves - " + userCount;
+            lblGetNum.Text = "Get number " + userNumber + " with minimum moves " + userCount;
 
         }
 
@@ -154,13 +139,14 @@ namespace HM7_5
         {
             int tempNum = userNumber;
             int step = 0;
-            while(tempNum != 0)
+            while (tempNum != 0)
             {
                 if (tempNum % 2 == 0)
                 {
                     tempNum = tempNum / 2;
                     step++;
-                } else
+                }
+                else
                 {
                     tempNum = tempNum - 1;
                     step++;

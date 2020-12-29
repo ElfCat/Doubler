@@ -17,6 +17,7 @@ namespace HM7_5
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Doubler());
+            Application.Run(new Form2());
         }
     }
 }

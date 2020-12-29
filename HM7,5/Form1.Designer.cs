@@ -90,7 +90,6 @@
             this.lblText.Size = new System.Drawing.Size(96, 15);
             this.lblText.TabIndex = 4;
             this.lblText.Text = "Number of actins";
-            this.lblText.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblCount
             // 
@@ -100,7 +99,6 @@
             this.lblCount.Size = new System.Drawing.Size(14, 15);
             this.lblCount.TabIndex = 5;
             this.lblCount.Text = "0";
-            this.lblCount.Click += new System.EventHandler(this.lblCount_Click);
             // 
             // contextMenuStrip1
             // 
@@ -164,7 +162,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Doubler";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Doubler_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
